@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General Knowledge Quiz"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Question 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. What is the capital of France?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <RadioButton android:id="@+id/q1_opt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="London" />
+            <RadioButton android:id="@+id/q1_opt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Berlin" />
+            <RadioButton android:id="@+id/q1_opt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Paris" />
+            <RadioButton android:id="@+id/q1_opt4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Madrid" />
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Which planet is known as the Red Planet?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <RadioButton android:id="@+id/q2_opt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Venus" />
+            <RadioButton android:id="@+id/q2_opt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mars" />
+            <RadioButton android:id="@+id/q2_opt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jupiter" />
+            <RadioButton android:id="@+id/q2_opt4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saturn" />
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. What is the largest ocean on Earth?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <RadioButton android:id="@+id/q3_opt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Atlantic Ocean" />
+            <RadioButton android:id="@+id/q3_opt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Indian Ocean" />
+            <RadioButton android:id="@+id/q3_opt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Arctic Ocean" />
+            <RadioButton android:id="@+id/q3_opt4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pacific Ocean" />
+        </RadioGroup>
+
+        <!-- Question 4 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Who wrote 'Romeo and Juliet'?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <RadioButton android:id="@+id/q4_opt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Charles Dickens" />
+            <RadioButton android:id="@+id/q4_opt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="William Shakespeare" />
+            <RadioButton android:id="@+id/q4_opt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mark Twain" />
+            <RadioButton android:id="@+id/q4_opt4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jane Austen" />
+        </RadioGroup>
+
+        <!-- Question 5 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. What is the smallest country in the world?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+            <RadioButton android:id="@+id/q5_opt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Monaco" />
+            <RadioButton android:id="@+id/q5_opt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Malta" />
+            <RadioButton android:id="@+id/q5_opt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vatican City" />
+            <RadioButton android:id="@+id/q5_opt4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="San Marino" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmitQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+</ScrollView>
